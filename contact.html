@@ -87,42 +87,48 @@
             <div class="row text-center">
                 <div class="col-md-12">
                     <h1 >Vous voulez en savoir plus?</h1>
-                    <p class="lead text-left" style="color:#898989;">Que vous soyez un enseignant(e) ou un(e) &eacute;l&egrave;ve, si vous voulez en savoir plus laisser nous vos information et nous vous contacterons dans les plus bref d&eacutelai</p>
+                    <p class="lead text-left" style="color:#898989;">Que vous soyez un enseignant(e) ou un(e) &eacute;l&egrave;ve, 
+					qui veux en savoir plus, laissez nous vos informations et nous vous contacterons dans les plus brefs d&eacute;lais. <p class="txt-danger" style="color:#bf0000;">(Les champs identifi&eacute;s d'un * sont obligatoires)</p></p>
                 </div>
             </div>
             <hr>
-            <form class="form-horizontal">
-  <div class="form-group">
-    <label for="inputFirstName" class="col-sm-2 control-label">Pr&eacute;nom*</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputFirstName" placeholder="Pr&eacute;nom" required>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Nom*</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName" placeholder="Nom" required>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputEmail" class="col-sm-2 control-label">Email*</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputemail" placeholder="Email" required>
-    </div>
-  </div>
-  <div class="form-group">
-  <label for="inputEmail" class="col-sm-2 control-label">Ann&eacute;e d'enseignement</label>
-    <div class="col-sm-10">
-      <select class="form-control">
-  <option>secondaire 1</option>
-  <option>secondaire 2</option>
-  <option>secondaire 3</option>
-  <option>secondaire 4</option>
-  <option>secondaire 5</option>
-  <option>autre</option>
-</select>
-    </div>
-  </div>
+            <form action="https://formspree.io/cedrickchampagne@hotmail.com" class="form-horizontal" method="POST">
+				<div class="form-group">
+					<label for="inputFirstName" class="col-sm-2 control-label">Pr&eacute;nom*</label>
+						<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputFirstName" placeholder="Pr&eacute;nom" name="prenom" required>
+					</div>
+					</div>
+				<div class="form-group">
+					<label for="inputName" class="col-sm-2 control-label">Nom*</label>
+					<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputName" placeholder="Nom" name="nom" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="col-sm-2 control-label">Email*</label>
+					<div class="col-sm-10">
+					<input type="email" class="form-control" id="inputemail" placeholder="Email" name="courriel"required>
+					</div>
+				</div>
+				<div class="form-group">
+				<label for="inputEmail" class="col-sm-2 control-label">Ann&eacute;e d'enseignement</label>
+					<div class="col-sm-10">
+				<select class="form-control" name="annee">
+					<option>secondaire 1</option>
+					<option>secondaire 2</option>
+					<option>secondaire 3</option>
+					<option>secondaire 4</option>
+					<option>secondaire 5</option>
+					<option>autre</option>
+				</select>
+				
+			</div>
+		</div>
+				<div class="form-group">
+					<label for="inputText" class="col-sm-2 control-label">Commentaires</label>
+					<div class="col-sm-10"><textarea class="form-control" id="exampleTextarea" rows="3" name="commentaires"></textarea></div>
+  </div></div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn cd-btn selected">Envoyer</button>
@@ -136,24 +142,24 @@
                 <div class="container">
 
                     <div class="col-md-4 text-center">
-                        <h1 class="">Demo interactif</h1>
-                        <p class="lead">Aucun frais, aucune limite</p>
-                        <button class="cd-btn" style="background-color: rgba(0, 0, 0, 0.31);
-">Demarrer</button>
+                        <h1 class="blacklight">Demo interactif</h1>
+                        <p class="lead blacklight">Aucun frais, aucune limite</p><hr/>
+                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Demarrer</button><hr/>
                     </div>
                     <div class="col-md-4 text-center">
-                        <h1 class="">Ecrivez-nous</h1>
-                        <p class="lead">Reponses rapides</p>
-                        <button class="cd-btn" style="background-color: rgba(0, 0, 0, 0.31);
-">Contacter</button>
+                        <h1 class="blacklight">Ecrivez-nous</h1>
+                        <p class="lead blacklight">Reponses rapides</p><hr/>
+                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Contacter</button><hr/>
                     </div>
                     <div class="col-md-4 text-center">
-                        <h1 class="">Joignez-nous</h1>
-                        <p class="lead">Nous sommes sociaux</p>
-                        <button class="cd-btn" style="background-color: rgba(0, 0, 0, 0.31);
+                        <h1 class="blacklight">Joignez-nous</h1>
+                        <p class="lead blacklight">Nous sommes sociaux</p><hr/>
+                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
 ">Facebook</button>
-                        <button class="cd-btn" style="background-color: rgba(0, 0, 0, 0.31);
-">Twitter</button>
+                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Twitter</button><hr/>
                     </div>
                 </div>
             </div>
@@ -257,7 +263,7 @@
         .banner2 .row {
             padding-top: 50px;
             padding-bottom: 50px;
-            background: rgba(186, 191, 51, 0.3);
+            background: rgba(186, 191, 51, 0.5);
             height: 100%;
         }
 
