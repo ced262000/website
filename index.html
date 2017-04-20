@@ -39,13 +39,13 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar" style="background-color:#000;"></span>
                     <span class="icon-bar" style="background-color:#000;"></span>
                     <span class="icon-bar" style="background-color:#000;"></span>
                 </button>
-                <a class="navbar-brand" href="#" style="color : #000;">&Eacute;tudie &Ccedil;A!</a>
+                <a class="navbar-brand" href="index.html" style="color : #000; ">&Eacute;tudie &Ccedil;A!</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navlinks" id="bs-example-navbar-collapse-1">
@@ -77,21 +77,14 @@
 
                 <div class="container">
 
-                    <div class="col-md-6 text-center">
-                        <div class="embed-responsive embed-responsive-16by9 ">
-                            <iframe width="560" class="embed-responsive-item" height="315" src="https://www.youtube.com/embed/HndV87XpkWg" frameborder="0"
-                                allowfullscreen></iframe>
-
-                        </div>
-                    </div>
-
+                   
 
 
                     <div class="col-md-6 text-left">
                         <h1 class="blacklight">	&Eacute;tudie &Ccedil;a!</h1>
-                        <p class="lead blacklight" style="display:block">Syst&egrave;me d'&eacute;tude optimis&eacute; pour le succ&egrave;s!</p>
+                        <p class="lead blacklight" style="display:block">Un syst&egrave;me d'&eacute;tude optimis&eacute; pour le succ&egrave;s!</p>
                         <ul class="list-unstyled">
-                            <li class="blacklight">Bas&eacute; au Qu&eacute;bec</li>
+                            <li class="blacklight">Lanc&eacute; au Qu&eacute;bec</li>
                             <br>
                             <li class="blacklight">Cr&eacute;&eacute; par des &eacute;l&egrave;ves du secondaire pour des &eacute;l&egrave;ves du secondaire.</li>
                             <br>
@@ -139,22 +132,22 @@
                     <div class="col-md-4 text-center">
                         <h1 class="blacklight">Demo interactif</h1>
                         <p class="lead blacklight">Aucun frais, aucune limite</p><hr/>
-                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
-">Demarrer</button><hr/>
+                        <a href="#"><button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Demarrer</button></a><hr/>
                     </div>
                     <div class="col-md-4 text-center">
-                        <h1 class="blacklight">Ecrivez-nous</h1>
-                        <p class="lead blacklight">Reponses rapides</p><hr/>
-                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
-">Contacter</button><hr/>
+                        <h1 class="blacklight">&Eacute;crivez-nous</h1>
+                        <p class="lead blacklight">R&eacute;ponses rapides</p><hr/>
+                        <a href="contact.html"><button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Contacter</button></a><hr/>
                     </div>
                     <div class="col-md-4 text-center">
                         <h1 class="blacklight">Joignez-nous</h1>
                         <p class="lead blacklight">Nous sommes sociaux</p><hr/>
-                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+                        <a href="#"><button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
 ">Facebook</button>
-                        <button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
-">Twitter</button><hr/>
+                        <a  href="#"><button class="cd-btn" style="background-color: rgba(255, 255, 255, 0.8);
+">Twitter</button></a><hr/>
                     </div>
                 </div>
             </div>
@@ -203,7 +196,13 @@
         }
 
 
-
+		.navbar-brand {
+            float: left;
+            height: 50px;
+            padding-top: auto;
+			padding-bottom : auto;
+            font-size: 24px;
+        }
 
  
         @media (max-width: 767px) {
@@ -217,7 +216,7 @@
 
 
 
-        .navbar-inverse .navbar-brand {
+        .navbar-inverse {
             color: #fff;
         }
 
@@ -309,11 +308,9 @@
             max-width: 100%;
     box-shadow: 0 0 7px 2px;     
 		
-	
 }
 
 .selected {
-
 background-color:#BABF33;
 color:#fff;
 }
